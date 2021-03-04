@@ -4,7 +4,12 @@
     <title>Resume and porfolio</title>
   </head>
   
-  <iframe src="resume_portfolio.pdf" style="width: 100%;height: 2000px;border: none;"></iframe>
+  <iframe id="theFrame" src="resume_portfolio.pdf" style="width: 100%;height: 2000px;border: none;"></iframe>
+	<script>
+	document.getElementById("theFrame").contentWindow.onload = function() {
+	    this.document.getElementsByTagName("img")[0].style.width="100%";
+	};
+	</script>
     
  
 </html>
