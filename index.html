@@ -3,8 +3,8 @@
   <head>
     <title>Resume and porfolio</title>
   </head>
-  
-  <iframe id="theFrame" src="./resume_portfolio.pdf" style="width: 100%;height: 2000px;border: none;"></iframe>
+  <object>
+  <iframe id="theFrame" src="./resume_portfolio.pdf" style="width: 100%;height: 2000px;border: none;"></iframe></object>>
 	<script>
 	document.getElementById("theFrame").contentWindow.onload = function() {
 	    this.document.getElementsByTagName("img")[0].style.width="100%";
